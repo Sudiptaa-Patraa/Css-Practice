@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Practice Project</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.5rem;
+        }
+
+        #header {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100px;
+        }
+
+        #content-wraper {
+            float: left;
+            width: 100%;
+        }
+
+        #content-coloumn {
+            margin: 0 30px 0 30px;
+        }
+
+        #left-coloumn {
+            float: left;
+            width: 1000px;
+            margin-left: 0px;
+            background-color: #24c8ff;
+        }
+
+        #right-coloumn {
+            float: right;
+            width: 1000px;
+            margin-left: 0px;
+            background-color: #fffb00;
+        }
+
+        .inner-text {
+            margin: 20px;
+            font-family: Arial;
+            color: black;
+        }
+
+        #footer {
+            clear: left;
+            background: black;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 4px;
+        }
+
+        /*Navigation bar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        li:last child {
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #808080;
+        }
+
+        .active {
+            background-color: #809080ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+        <div id="content-wraper" style="display: flex;">
+            <div id="left-coloumn">
+                <div class="inner-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis veniam autem, similique
+                    molestias
+                    ullam minima quae expedita exercitationem, officiis tempora officia aliquid nobis iusto nisi
+                    sunt
+                    quam!
+                    Sint voluptas iusto quo vero at numquam dignissimos, aspernatur quisquam vel quod, veritatis
+                    quibusdam
+                    accusantium quos doloribus nobis ipsa deleniti officiis rerum quasi?
+                </div>
+            </div>
+            <div id="content-coloumn">
+                <br class="inner-text">
+                <b>Welcome!</b><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sunt, consequatur
+                veritatis unde non id asperiores et ratione cum minus sapiente cumque, perspiciatis sed quisquam vitae
+                dolore voluptatibus nihil! Fugit esse aliquam, sequi hic quis cupiditate neque laudantium officiis
+                dolores pariatur non possimus rem expedita praesentium quam eos atque provident voluptatem facere ab
+                amet reprehenderit laborum nam! Voluptatum quam autem laudantium quidem vel asperiores eum quibusdam,
+                ducimus saepe, tempore odio perspiciatis quia fugit voluptatibus laboriosam nisi, dolore modi! Accusamus
+                impedit dolores culpa. Aut, quaerat eligendi in qui nesciunt, numquam porro, non at deserunt magnam quam
+                ipsa libero fugiat voluptatibus corrupti.
+            </div>
+
+
+            <div id="right-coloumn">
+                <div class="inner-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nulla? Minus alias repellendus
+                    obcaecati
+                    dolores vel rem dicta magni minima dolorum perspiciatis, quas quibusdam expedita. Totam amet
+                    tenetur,
+                    harum ab voluptatem accusantium recusandae aspernatur nostrum voluptas fuga eligendi fugit
+                    deserunt,
+                    necessitatibus assumenda minima alias dolores aperiam quibusdam animi rem tempora.
+                </div>
+            </div>
+        </div>
+        <div id="footer">Footer</div>
+    </div>
+</body>
+
+</html>
